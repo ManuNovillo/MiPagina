@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/ring-cool.gif" alt="logo" width="150" height="70px"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="text-center bg-azul-gradiente text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="listas">
+                    <h1 class="text-center">LISTAS</h1>
+                    <h1>Tipos de listas</h1>
+                    <h2>Listas desordenadas<span class="remarcar">ul</span></h2>
+                    <ul class="fuera">
+                        <li>Opciones</li>
+                        <li>Vista</li>
+                        <li>Borrar</li>
+                        <li>Lo que sea</li>
+                    </ul>
+
+                    <h2>Listas ordenadas<span class="remarcar">ol</span></h2>
+                    <ol class="fuera">
+                        <li>Opcion 1</li>
+                        <li>Opcion 2</li>
+                        <li>Opcion 3</li>
+                        <li>Opcion 4</li>
+                    </ol>
+
+                    <h2>Listas desordenadas de varios niveles<span class="remarcar">ul dentro de ul</span></h2>
+                    <ul class="fuera">
+                        <li>Opciones</li>
+                            <ul class="dentro-amarillo">
+                                <li>Una opcion</li>
+                                <li>Otra opcion</li>
+                            </ul>
+                        <li>Vista</li>
+                            <ul class="dentro-amarillo">
+                                <li>Cambiar vista</li>
+                                <li>Otra opcion</li>
+                            </ul>
+                        <li>Borrar</li>
+                            <ul class="dentro-amarillo">
+                                <li>Borrar todo</li>
+                                <li>Deshacer</li>
+                            </ul>
+                    </ul>
+
+                    <h2>Listas ordenadas de varios niveles<span class="remarcar">ol dentro de ol</span></h2>
+                    <ol class="fuera">
+                        <li>Opciones</li>
+                            <ol class="dentro-amarillo">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                            </ol>
+                        <li>Vista</li>
+                            <ol class="dentro-amarillo">
+                                <li>Vista 1</li>
+                                <li>Vista 2</li>
+                            </ol>
+                        <li>Borrar</li>
+                            <ol class="dentro-amarillo">
+                                <li>Borrar todo</li>
+                                <li>Deshacer</li>
+                            </ol>
+                    </ol>
+
+                    <h2>Listas ordenadas de varios niveles customizadas<span class="remarcar">css: list-style</span></h2>
+                    <ol class="upper-roman">
+                        <li>Opciones</li>
+                            <ol class="mediodentro">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                            </ol>
+                        <li>Vista</li>
+                            <ol class="mediodentro">
+                                <li>Vista 1</li>
+                                <li>Vista 2</li>
+                            </ol>
+                        <li>Borrar</li>
+                            <ol class="mediodentro">
+                                <li>Borrar todo</li>
+                                <li>Deshacer</li>
+                            </ol>
+                    </ol>
+
+                    <h2>Listas ordenadas de 3 niveles customizadas<span class="remarcar">ol dentro de ol dentro de ol</span></h2>
+                    <ol class="upper-roman">
+                        <li>Opciones</li>
+                            <ol class="lower-roman">
+                                <li>Opcion 1</li>
+                                    <ol class="olmuydentro">
+                                        <li>Subopcion de opcion 1</li>
+                                    </ol>
+                                <li>Opcion 2</li>
+                            </ol>
+                        <li>Vista</li>
+                            <ol class="lower-roman">
+                                <li>Vista 1</li>
+                                <ol class="olmuydentro">
+                                    <li>Subopcion de vista 1</li>
+                                    <li>Otra subopcion de opcion vista 1</li>
+                                </ol>
+                                <li>Vista 2</li>
+                                <ol class="olmuydentro">
+                                    <li>Subopcion de vista 2</li>
+                                    <li>Otra subopcion de opcion vista 2</li>
+                                </ol>
+                            </ol>
+                        <li>Borrar</li>
+                            <ol class="lower-roman">
+                                <li>Borrar todo</li>
+                                <li>Deshacer</li>
+                            </ol>
+                    </ol>
+
+                    <h2>Listas ordenadas de 3 niveles customizadas<span class="remarcar">ul dentro de ul dentro de ul</span></h2>
+                    <ul class="alien">
+                        <li>Opciones</li>
+                            <ul class="caca">
+                                <li>Opcion 1</li>
+                                    <ul class="silla-ruedas">
+                                        <li>Subopcion de opcion 1</li>
+                                    </ul>
+                                <li>Opcion 2</li>
+                            </ul>
+                        <li>Vista</li>
+                            <ul class="caca">
+                                <li>Vista 1</li>
+                                <ul class="silla-ruedas">
+                                    <li>Subopcion de vista 1</li>
+                                    <li>Otra subopcion de opcion vista 1</li>
+                                </ul>
+                                <li>Vista 2</li>
+                                <ul class="silla-ruedas">
+                                    <li>Subopcion de vista 2</li>
+                                    <li>Otra subopcion de opcion vista 2</li>
+                                </ul>
+                            </ul>
+                        <li>Borrar</li>
+                            <ul class="caca">
+                                <li>Borrar todo</li>
+                                <li>Deshacer</li>
+                            </ul>
+                    </ul>
+
+                    <h2>Listas de descripción<span class="remarcar">dl</span></h2>
+
+                    <dl>
+                        <dt class="text-big-red">Título<span class="remarcar">dt</span></dt>
+                        <dd>Descripción de lo que sea<span class="remarcar">dd</span></dd>
+                        <dt class="text-big-red">Otro título</dt>
+                        <dd>Otra descripción</dd>
+                    </dl>
+
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-gradiente text-center text-white py-3">&copy; Manuel Novillo</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/ring-cool.gif" alt="logo" width="150" height="70px"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="text-center bg-azul-gradiente text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="multimedia">
+                    <h1 class="text-center">MULTIMEDIA</h1>
+                    <h2>Video<span class="remarcar">video</span></h2>
+                    <video width="500" controls muted autoplay>
+                        <source src="videos/mora.mp4" type="video/mp4">
+                        <source src="videos/mora.webm" type="video/webm">
+                        <source src="videos/mora.ogv" type="video/ogv">
+                    </video>
+                    <audio src="audios/audio.ogg"></audio>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-gradiente text-center text-white py-3">&copy; Manuel Novillo</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
